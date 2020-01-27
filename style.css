@@ -1,0 +1,534 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.wrapper {
+    width: 100%; 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.container {
+    width: 80%; 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+html {
+    font-size: 62.5%;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+body {
+    font-family: 'Cabin', sans-serif;
+    font-size: 1.5rem;
+}
+header {
+    background: url("assets/asset-1.jpg"); 
+    background-size: cover;
+    background-position: center;
+	background-repeat: no-repeat; 
+	height: 93vh;
+}
+h1 {
+    margin-top: 15%;
+    text-transform: uppercase;
+    font-size: 25px;
+    text-align: center;
+}
+h1 span {
+    font-family: 'Great Vibes', cursive;
+    font-weight: lighter;
+    text-transform: none;
+    display: block;
+    font-size: 120px;
+}
+
+.hero-title {
+    float: left;
+    width: 80%;
+    margin-left: 10%;
+}
+.hero-links {
+    display: block;
+    float: left;
+    width: 1.4%;
+    margin: 12% 0 0 8%;
+}
+.socials {
+    margin: 35%;
+}
+.hamburger {
+    color: black;
+    display: none;
+}
+h2 {
+    font-family: 'Great Vibes', cursive;
+    font-weight: lighter;
+    font-size: 42px;
+}
+.mobile-h2 {
+    margin-top: 0px;
+    padding-top: 2%;
+    width: 60%;
+    float: left;
+}
+h3 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    clear: both;
+}
+ul {
+    padding-left: 0;
+}
+header ul {
+    float: right;
+}
+header li {
+    float:left;
+    list-style-type: none;
+    margin: 15px;
+}
+li {
+    list-style-type: none;
+    line-height: 2rem;
+}
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.8rem;
+}
+a:hover {
+    opacity: 0.5;
+}
+header a {
+    color: black;
+}
+.about-tasty {
+    background-color: #EAEDF4;
+    padding: 50px 40px 80px 40px;
+    text-align: center;
+}
+.black-nav {
+    background-color: #232323;
+    padding: 75px;
+    text-align: center;
+    margin: 0 auto;
+}
+.black-nav li {
+    display: inline-block;
+    width: calc(60% / 3);
+}
+.black-nav li a:hover {
+    color:#FDC800;
+    opacity: 1;
+}
+.fas {
+    width: 100%;
+    color: white;
+    display: inline-block;
+    margin-bottom: 10%;
+}
+i {
+    font-size: 3rem;
+    
+}
+.gallery {
+   margin-top: 7%;
+   margin-bottom: 7%;
+   text-align: center;
+}
+.gallery li {
+    list-style: none;
+    float: left;
+    margin: 0 auto; 
+    width: calc(90% / 3);
+}
+.gallery li img {
+    max-width: 90%;
+}
+.gallery li:first-child {
+    margin-left: 7%;
+}
+.image-container,
+.content-container {
+    float: left;
+    width: 50%;
+}
+.image-container img {
+    display: block;
+}
+.background {
+    background: #EAEDF4;
+}
+p {
+    width: 35%; 
+    line-height: 3rem;
+    margin: 0 auto;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+.about-tasty p {
+    width: 63%;
+}
+.content-container {
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 2%;
+    width: 50%;
+}
+.recipes {
+    float: right;
+}
+.meet-the-cook {
+    margin: 3% 0;
+}
+.image-container-chef {
+    padding-top: 4%;
+    float: left;
+    width: 30%;
+}
+.content-container-chef {
+    float: left;
+    width: 70%;
+    padding-left: 3%;
+}
+.content-container-chef p {
+    width: 100%;
+}
+footer {
+    padding-top: 2%;
+    background: #232323;
+    color: #fff;
+    clear: both;
+}
+footer p {
+    margin: 0;
+    width: 100%;
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+}
+footer h3 {
+    font-size: 2rem;
+    text-align: left;
+    margin-bottom: 1.3rem;
+}
+footer a {
+    line-height: 2.3rem;
+    font-size: 1.5rem;
+}
+.footer-box1,
+.footer-box2,
+.footer-box3 {
+    float: left;
+    width: 13%;
+    margin-right: 4%;
+}
+.footer-box3 a {
+    text-transform: none;
+}
+.footer-box4 {
+    float: right;
+    width: 45%;
+}
+button {
+    font-family: 'Cabin', sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bolder;
+    border: 0;
+    padding: 15px 40px;
+    background-color:#FDC800;
+}
+button:hover {
+    color:black;
+    box-shadow: 3px 5px;
+}
+button:active {
+    color:#FDC800;
+    background-color: black;
+}
+.subscribe:hover {
+    font-weight: bold;
+}
+form {
+    font-size: 0;
+    margin-top: 1.4%;
+}
+input[type=email] {
+    width: calc(100% - 150px);
+    border: none;
+    height: 43px;
+    padding-left: 4%;
+    font-size: 1.5rem;
+}
+.subscribe {
+    text-transform: uppercase;
+    width: 150px;
+    border: none;
+    background: #FDC800;
+    height: 43px;
+    font-size: 1.5rem;
+}
+.bottom-bar {
+    clear: both;
+    background: black;
+    text-align: center;
+}
+.bottom-bar p {
+    padding: 5px 0;
+    margin-top: 5%;
+    color:grey;
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 1200px) {
+    .hero-links {
+        margin-left: 5%;
+    }
+    .image-container-chef {
+        padding-top: 11%;
+    }
+    .footer-box3 {
+        width: 15%;
+    }
+    p {
+        width: 40%; 
+    }
+    .about-tasty p {
+        width: 63%;
+    }
+}
+
+@media (max-width: 1050px) {
+    header h2 {
+        display: none;
+    }
+    header ul {
+        float: none;
+        width: 50%;
+        padding: 3% 0 0 3%;
+        margin: 0 auto;
+    }
+    .content-container {
+        margin-top: 1%;
+    }
+    h2 {
+        font-size: 2.9rem;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    p {
+        line-height: 1.8rem;
+        width: 50%;
+        font-size: 1.2rem;
+    }
+    .footer-container,
+    .footer-container h3 {
+        text-align: center;
+    }
+    .footer-box1,
+    .footer-box2,
+    .footer-box4 {
+        width: 100%;
+    }
+    .footer-box3 {
+        display: none;
+    }
+    .footer-box2 ul {
+        width: 52%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .footer-box2 li {
+        float: left;
+        width: calc();
+        padding-left: 9%;
+    }
+    .email-form {
+        width: 70%;
+        margin: 0.3%;
+    }
+    input[type=email] {
+        width: 70%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 740px) {
+    .hero-links {
+        visibility: hidden;
+    }
+    header ul {
+        width: 60%;
+    }
+    header a {
+        font-size: 1.6rem;
+    }
+    .about-tasty h2 {
+        margin-top: 0;
+    }
+    .black-nav li {
+      width: calc(80% / 3);
+    }
+    .content-container {
+        margin-top: -3%;
+    }
+    .meet-the-cook img {
+        margin-top: 40%;
+    }
+}
+
+@media (max-width: 610px) {
+    header ul {
+        width: 92%;
+    }
+}
+
+
+
+@media (max-width: 450px) {
+    header {
+       height: 85vh; 
+    }
+    h2 {
+        font-size: 4.5rem;
+        margin-bottom: 2.1rem;
+    }
+    header ul {
+       display: none;
+    }
+    .hero-links {
+        visibility: hidden;
+    }
+    .image-container {
+        width: 100%;
+    }
+    .black-nav {
+        margin: 0;
+    }
+    .black-nav li {
+        width: 100%;
+    }
+    .black-nav i {
+        margin: 10% 0;
+    }
+    i.fas.fa-utensils {
+        margin-top: 0;
+    }
+    .content-container {
+        width: 100%;
+    }
+    .mobile-h2 {
+        display: block;
+        float: left;
+        font-size: 5rem;
+        margin-top: 2%;
+        width: 50%;
+    }
+    .content-container h3 {
+        font-size: 3rem;
+    }
+    .hamburger {
+        float: right;
+        width: 20%;
+        color: black;
+        display: block;
+        margin-top: 2%;
+    }
+    .hamburger i {
+        font-size: 5.5rem;
+    }
+    .about-tasty p {
+        width: 100%;
+        margin: 0 0 9% 0;
+    }
+    p {
+        width: 65%;
+        font-size: 1.7rem;
+        line-height: 2.6rem;
+        margin: 0 auto;
+        margin-bottom: 8%;
+    }
+    i {
+        font-size: 4.1rem;
+    }
+    .black-nav a {
+        font-size: 2rem;
+    }
+    .black-nav li {
+        margin-top: 2%;
+    }
+    .gallery {
+        margin: 0;
+    }
+    .gallery li {
+        float: left;
+        margin: 0 auto; 
+        width: 50%;
+    }
+    .gallery li img {
+        max-width: 100%;
+    }
+    .gallery li:first-child {
+        margin: 0;
+    }
+    .gallery li:last-child {
+        display: none;
+    }
+    .image-container-chef {
+        margin-left: 18%;
+        display: block;
+        width: 64%;
+        padding-top: 0;
+    }
+    .content-container-chef {
+        text-align: center;
+        float: left;
+        width: 100%;
+        padding-left: 3%;
+    }
+    .content-container-chef p {
+        width: 100%;
+        text-align: left;
+    }
+    .email-form {
+        width: 100%;
+        margin: 1% 0;
+    }
+    button {
+        margin-bottom: 10%;
+    }
+    input[type=email] {
+        width: 100%;
+        text-align: center;
+    }
+    .footer-box1 p {
+        width: 33%;
+        display: inline-block;
+    }
+    .footer-box2 ul {
+        width: 100%;
+    }
+    .footer-box2 li {
+        border-right: 2px solid white;
+        padding-left:20px;
+        padding-right:12px;
+    }
+    .footer-box2 li:last-child {
+        border-right: none;
+    }
+    .bottom-bar p {
+        letter-spacing: 0.1rem;
+        padding: 10px 0;
+        margin-top:50px;
+    }
+}
+
+
